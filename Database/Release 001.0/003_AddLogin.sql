@@ -8,8 +8,9 @@ GO
 --[ENG] Run against db created in script 001
 --[ESP] Correr el siguiente db contra db creada en script 001
 CREATE USER NameOfYourDbUser
-        FOR LOGIN NameOfYourDbLogin
+        FOR LOGIN NameOfYourDbUserLogin
 GO
 
 EXEC sp_addrolemember db_owner, NameOfYourDbUser
 GO
+
