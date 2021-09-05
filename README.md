@@ -4,7 +4,7 @@ This API is set to be consumed by repo : https://github.com/poche1988/login-regi
 
 # Requirements 
 Visual Studio or another IDE    
-NET Core 5 DSK  
+NET Core 5 SDK  
 SQL Management  
 
 # Details
