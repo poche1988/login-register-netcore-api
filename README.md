@@ -10,7 +10,7 @@ SQL Server
 # Setup
 Run scripts on project "Database" in SQL Management.  
 Replace "nameofyourdb" with your own db name.  
-Update connection strin in API/appsettings.json
+Update connection string in API/appsettings.json
 
 # Projects in solution
 API - Main Project. It contains the api controllers.    
