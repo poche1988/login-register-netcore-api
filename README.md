@@ -1,6 +1,11 @@
 # Introduction 
 API to register or login with Net Core 5, jwt.  
-This API is set to be consumed by repo login-register-react-redux-ui  
+This API is set to be consumed by repo : https://github.com/poche1988/login-register-react-redux-client  
+
+# Requirements 
+Visual Studio or another IDE    
+NET Core 5 SDK  
+SQL Management  
 
 # Details
 Net Core 5 API  
@@ -10,7 +15,8 @@ SQL Server
 # Setup
 Run scripts on project "Database" in SQL Management.  
 Replace "nameofyourdb" with your own db name.  
-Update connection strin in API/appsettings.json
+Update connection string in API/appsettings.json
+Make sure project API is set up as startup project
 
 # Projects in solution
 API - Main Project. It contains the api controllers.    
