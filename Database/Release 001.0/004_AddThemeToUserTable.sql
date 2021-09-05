@@ -1,2 +1,0 @@
-﻿ALTER TABLE AspNetUsers ADD CurrentTheme INT DEFAULT 1 NOT NULL
-GO

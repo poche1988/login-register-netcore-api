@@ -1,6 +1,4 @@
-﻿using Common.Enumerations;
-
-namespace Models.Account
+﻿namespace Models.Account
 {
     public class UserModel
     {
@@ -11,7 +9,5 @@ namespace Models.Account
         public string Token{ get; set; }
 
         public string Username { get; set; }
-
-        public ColorTheme CurrentTheme { get; set; }
     }
 }

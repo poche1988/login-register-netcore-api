@@ -1,4 +1,7 @@
-﻿USE [EarthMeDb]
+﻿--[ENG] Replace "nameOfYourDb" with the name of your DB
+--[ESP] Reemplazar "nameOfYourDb" con el nombre de tu base de datos
+
+USE [nameofyourdb]
 GO
 /****** Object:  Table [dbo].[AspNetRoleClaims]    Script Date: 6/4/2018 10:18:03 PM ******/
 SET ANSI_NULLS ON

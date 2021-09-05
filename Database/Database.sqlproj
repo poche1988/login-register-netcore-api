@@ -63,7 +63,6 @@
     <None Include="Release 001.0\002_AddIdentity.sql" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Release 001.0\004_AddThemeToUserTable.sql" />
     <Build Include="Release 001.0\003_AddLogin.sql" />
   </ItemGroup>
 </Project>

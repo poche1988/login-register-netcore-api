@@ -37,7 +37,7 @@ namespace API
             {
                 opt.AddPolicy("CorsPolicy", policy =>
                 {
-                    policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:3000");
+                    policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:3000"); // solo da acceso a la api a request provenientes de localhost:3000
                 });
             });
 
@@ -102,9 +102,7 @@ namespace API
         private static void AddApplicationServices(IServiceCollection services)
         {
             services.AddHttpContextAccessor();
-            services.AddScoped<IReadUserService, ReadUserService>();
-            services.AddScoped<ITokenService, TokenService>();
-            services.AddScoped<IUnitOfWork, UnitOfWork>();       
+            services.AddScoped<ITokenService, TokenService>(); 
         }
 
         #endregion

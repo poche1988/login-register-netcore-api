@@ -1,13 +1,11 @@
 ﻿using API.Authentication;
 using AutoMapper;
-using Common.Enumerations;
 using Domain.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Models.Account;
-using System;
 using System.Security.Claims;
 using System.Threading.Tasks;
 
@@ -40,12 +38,6 @@ namespace API.Controllers
         #endregion
 
 
-        [HttpGet("helloworld")]
-        public ActionResult<string> HelloWorld()
-        {
-            return Ok("hello world"); ;
-        }
-
         [HttpPost("login")]
         public async Task<ActionResult<UserModel>> Login(LoginModel loginModel)
         {
@@ -64,7 +56,7 @@ namespace API.Controllers
 
                 return Unauthorized();
             }
-            catch (Exception e)
+            catch
             {
                 return BadRequest();
             }
@@ -92,30 +84,12 @@ namespace API.Controllers
                         Id = user.Id,
                         DisplayName = user.DisplayName,
                         Token = _tokenService.CreateToken(user),
-                        Username = user.UserName,
-                        CurrentTheme = user.CurrentTheme
+                        Username = user.UserName
                     };
                 }
             }
 
             return BadRequest("Problems registering user");
-        }
-
-        [Authorize]
-        [HttpPut("theme")]
-        public async Task<ActionResult> ApplyTheme(ThemeModel themeModel)
-        {
-            try
-            {
-                var user = await _userManager.FindByEmailAsync(User.FindFirstValue(ClaimTypes.Email));
-                user.CurrentTheme = (ColorTheme)themeModel.Theme;
-                await _userManager.UpdateAsync(user);
-                return Ok();
-            }
-            catch
-            {
-                return BadRequest();
-            }
         }
 
         [Authorize]
@@ -136,8 +110,7 @@ namespace API.Controllers
                 Id = user.Id,
                 DisplayName = user.DisplayName,
                 Token = _tokenService.CreateToken(user),
-                Username = user.UserName,
-                CurrentTheme = user.CurrentTheme
+                Username = user.UserName
             };
         }
 
