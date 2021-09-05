@@ -10,7 +10,6 @@ namespace API.Mapping.Account
         {
             CreateMap<RegisterModel, AppUser>()
                 .ForMember(a => a.AccessFailedCount, b => b.Ignore())
-                .ForMember(a => a.Bio, b => b.Ignore())
                 .ForMember(a => a.ConcurrencyStamp, b => b.Ignore())
                 .ForMember(a => a.EmailConfirmed, b => b.Ignore())
                 .ForMember(a => a.Id, b => b.Ignore())

@@ -113,7 +113,6 @@ CREATE TABLE [dbo].[AspNetUsers](
 	[Email] [nvarchar](256) NULL,
 	[NormalizedEmail] [nvarchar](256) NULL,
 	[EmailConfirmed] [bit] NOT NULL,
-	[Bio] [nvarchar](max) NULL,
 	[PasswordHash] [nvarchar](max) NULL,
 	[SecurityStamp] [nvarchar](max) NULL,
 	[ConcurrencyStamp] [nvarchar](max) NULL,
