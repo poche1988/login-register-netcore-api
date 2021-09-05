@@ -3,7 +3,7 @@
 
 USE [nameofyourdb]
 GO
-/****** Object:  Table [dbo].[AspNetRoleClaims]    Script Date: 6/4/2018 10:18:03 PM ******/
+/****** Object:  Table [dbo].[AspNetRoleClaims] ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -22,7 +22,7 @@ CREATE TABLE [dbo].[AspNetRoleClaims](
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 END
 GO
-/****** Object:  Table [dbo].[AspNetRoles]    Script Date: 6/4/2018 10:18:03 PM ******/
+/****** Object:  Table [dbo].[AspNetRoles] ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -41,7 +41,7 @@ CREATE TABLE [dbo].[AspNetRoles](
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 END
 GO
-/****** Object:  Table [dbo].[AspNetUserClaims]    Script Date: 6/4/2018 10:18:03 PM ******/
+/****** Object:  Table [dbo].[AspNetUserClaims] ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -60,7 +60,7 @@ CREATE TABLE [dbo].[AspNetUserClaims](
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 END
 GO
-/****** Object:  Table [dbo].[AspNetUserLogins]    Script Date: 6/4/2018 10:18:03 PM ******/
+/****** Object:  Table [dbo].[AspNetUserLogins] ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -80,7 +80,7 @@ CREATE TABLE [dbo].[AspNetUserLogins](
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 END
 GO
-/****** Object:  Table [dbo].[AspNetUserRoles]    Script Date: 6/4/2018 10:18:03 PM ******/
+/****** Object:  Table [dbo].[AspNetUserRoles] ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -98,7 +98,7 @@ CREATE TABLE [dbo].[AspNetUserRoles](
 ) ON [PRIMARY]
 END
 GO
-/****** Object:  Table [dbo].[AspNetUsers]    Script Date: 6/4/2018 10:18:03 PM ******/
+/****** Object:  Table [dbo].[AspNetUsers] ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -113,6 +113,7 @@ CREATE TABLE [dbo].[AspNetUsers](
 	[Email] [nvarchar](256) NULL,
 	[NormalizedEmail] [nvarchar](256) NULL,
 	[EmailConfirmed] [bit] NOT NULL,
+	[Bio] [nvarchar](max) NULL,
 	[PasswordHash] [nvarchar](max) NULL,
 	[SecurityStamp] [nvarchar](max) NULL,
 	[ConcurrencyStamp] [nvarchar](max) NULL,
@@ -129,7 +130,7 @@ CREATE TABLE [dbo].[AspNetUsers](
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 END
 GO
-/****** Object:  Table [dbo].[AspNetUserTokens]    Script Date: 6/4/2018 10:18:03 PM ******/
+/****** Object:  Table [dbo].[AspNetUserTokens]  ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
