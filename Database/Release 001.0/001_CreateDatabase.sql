@@ -1,0 +1,3 @@
+﻿Create Database EarthMeDb
+
+GO
