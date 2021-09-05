@@ -16,6 +16,7 @@ SQL Server
 Run scripts on project "Database" in SQL Management.  
 Replace "nameofyourdb" with your own db name.  
 Update connection string in API/appsettings.json
+Make sure project API is set up as startup project
 
 # Projects in solution
 API - Main Project. It contains the api controllers.    
