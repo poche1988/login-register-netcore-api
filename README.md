@@ -1,6 +1,6 @@
 # Introduction 
 API to register or login with Net Core 5, jwt.  
-This API is set to be consumed by repo : https://github.com/poche1988/login-register-react-redux-client  
+Client App repo consuming this API : https://github.com/poche1988/login-register-react-redux-client  
 
 # Requirements 
 Visual Studio or another IDE    
